@@ -9,6 +9,9 @@ export default {
       colors: {
         green: "#006D5B",
       },
+      backgroundImage:{
+        todayImg: "url('/today.png')",
+      },
     },
   },
   plugins: [],

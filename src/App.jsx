@@ -9,6 +9,11 @@ import FAQ from './Component/FAQ'
 import TopInvestors from './Component/topInvestors'
 import Choose from './Component/Choose'
 import UsersSay from './Component/UsersSay'
+import TeamMembers from './Component/TeamMembers'
+import Payment from './Component/Payment'
+import Today from './Component/Today'
+import News from './Component/News'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (
@@ -23,6 +28,11 @@ const App = () => {
       <TopInvestors />
       <Choose />
       <UsersSay />
+      <TeamMembers />
+      <Payment />
+      <Today />
+      <News />
+      <Footer />
     </div>
   )
 }

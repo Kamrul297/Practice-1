@@ -65,7 +65,7 @@ const ChooseMenu = [
 ];
 const Choose = () => {
   return (
-    <div className='lg:p-[70px] p-5 border-2 border-red-500 mb-10'>
+    <div className='lg:p-[70px] p-5 lg:mb-10'>
 
         {/* Text */}
         <h1 className='text-center poppins-bold text-[40px] text-[#0B0C0C]'>Why Choose <span className='text-[#02996C]'>Fimaex</span></h1>

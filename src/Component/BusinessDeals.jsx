@@ -37,9 +37,11 @@ const BusinessDeals = () => {
   return (
     <div className='bg-[#FAFAFA] lg:p-[70px] p-5'>
         {/* Heading */}
-        <h1 className='text-[#0B0C0C] text-center poppins-bold text-[40px]'>Business Deals</h1>
-        <p className='text-[#677372] text-center poppins-regular text-xs mt-5 mb-10'>Financial Asset Management Exchange (Fimaex) is a dynamic investment and portfolio management company specializing in tailored financial solutions for individuals and institutions.
-        </p>
+        <h1 className='text-[#0B0C0C] text-center poppins-bold lg:text-[40px] text-2xl'>Business Deals</h1>
+        <div className='lg:w-[50%] mx-auto'>
+           <p className='text-[#677372] text-center poppins-regular text-xs mt-5 mb-10'>Financial Asset Management Exchange (Fimaex) is a dynamic investment and portfolio management company specializing in tailored financial solutions for individuals and institutions.
+          </p>
+        </div>
 
         {/* Investing Card*/}
         <div>
@@ -49,15 +51,18 @@ const BusinessDeals = () => {
                 <div key={data.id} className='bg-[#FFFFFF] lg:w-[330px] w-[380px] h-[420px] rounded-[4px] p-6'>
                   <div className='mb-6'>
                     <h3 className='text-[18px] poppins-semibold lg:text-start text-center'>{data.name}</h3>
-                    <h1 className='text-[30px] poppins-semibold lg:text-start text-center'>{data.dollar}</h1>
+                    <h1 className='lg:text-[30px] text-2xl poppins-semibold lg:text-start text-center'>{data.dollar}</h1>
                   </div>
 
-                  <div>
+                  <div className='grid justify-center'>
                     <ul className='flex flex-col gap-4'>
-                      <li className='flex items-center lg:justify-start justify-center text-[14px] text-[#586261] gap-2'><p className='flex items-center lg:justify-start justify-center'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</p></li>
-                      <li className='flex items-center lg:justify-start justify-center text-[14px] text-[#586261] gap-2'><p className='flex items-center lg:justify-start justify-center'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</p></li>
-                      <li className='flex items-center lg:justify-start justify-center text-[14px] text-[#586261] gap-2'><p className='flex items-center lg:justify-start justify-center'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</p></li>
-                      <li className='flex items-center lg:justify-start justify-center text-[14px] text-[#586261] gap-2'><p className='flex items-center lg:justify-end justify-center'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</p> <span className='text-[10px] bg-[#ccfbf1] text-[#006D5B] py-[2px] px-[10px] rounded-full'>Capital</span></li>
+                      <li className='flex items-center text-[14px] text-[#586261] gap-2'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</li>
+
+                      <li className='flex items-center text-[14px] text-[#586261] gap-2'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</li>
+
+                      <li className='flex items-center text-[14px] text-[#586261] gap-2'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1}</li>
+
+                      <li className='flex items-center text-[14px] text-[#586261] gap-2'><IoMdCheckmarkCircleOutline className='text-[#006D5B] text-[20px]' /> {data.text1} <span className='text-[10px] bg-[#ccfbf1] text-[#006D5B] py-[2px] px-[10px] rounded-full'>Capital</span></li>
                     </ul>
                   </div>
                   <div className='flex justify-center mt-7'><button className='btn'><a href="" className='btn-a'>Invest Now</a></button></div>

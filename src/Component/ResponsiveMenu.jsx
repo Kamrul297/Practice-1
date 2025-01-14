@@ -10,9 +10,9 @@ const ResponsiveMenu = ({isOpen}) => {
             animate={{opacity:1, y:0}}
             exit={{opacity:0, y:-100}}
             transition={{duration:0.3}}
-            className='absolute left-0 w-full h-screen z-20 lg:hidden'
+            className="absolute w-full h-screen z-20 lg:hidden"
             >
-                <div className='bg-black text-white text-[14px] poppins-medium py-10 m-6'>
+                <div className='bg-slate-400 text-white text-[14px] poppins-medium py-10 m-6'>
                     <ul className='flex flex-col-reverse justify-center items-center gap-[20px]'>
                         <li>Home</li>
                         <li>About</li>

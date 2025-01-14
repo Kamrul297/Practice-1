@@ -2,9 +2,9 @@ import React from 'react'
 import logo from '../../assets/image-logo.png'
 import profile from '../../assets/user-profile-02.png'
 import lanImg from '../../assets/image2.png'
-import { FaChevronDown } from 'react-icons/fa';
-import { MdMenu } from 'react-icons/md';
+import { FaBars, FaChevronDown } from 'react-icons/fa';
 import ResponsiveMenu from '../ResponsiveMenu';
+import { FaXmark } from 'react-icons/fa6';
 
 const Menu = [
     {
@@ -36,6 +36,10 @@ const Menu = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const toggleNavbar = () => {
+        setIsOpen(!isOpen);
+  };
+
   return (
     <>
     <div className='flex justify-between items-center lg:px-16 px-4'>
@@ -79,8 +83,10 @@ const Navbar = () => {
             </div>
         </div>
         {/* sidebar */}
-        <div className='lg:hidden' onClick={() => setIsOpen(!isOpen)}>
-          <MdMenu className='text-3xl' />
+        <div className='md:hidden' >
+          <button className='flex items-center' onClick={toggleNavbar}>
+            { isOpen ? <FaXmark className='w-6 h-6' /> : <FaBars className='w-6 h-6' /> }
+          </button>
         </div>
     </div>
     {/* mobile sidebar */}
